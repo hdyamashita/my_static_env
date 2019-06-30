@@ -6,6 +6,7 @@ module.exports = {
     path.resolve('src/js/index.js'),
     path.resolve('src/scss/app.scss')],
   output: {
+    path: path.resolve(__dirname, 'public')
   },
   module: {
     rules: [
@@ -25,6 +26,10 @@ module.exports = {
           }
       ]
     }]
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    compress: true,
   },
   watch: true
 };
