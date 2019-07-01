@@ -12,7 +12,7 @@
   "scripts": {
     "webpack": "webpack",
     "eslint": "eslint",
-    "start:dev": "webpack-dev-server"
+    "start": "webpack-dev-server --open-page index.html"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
